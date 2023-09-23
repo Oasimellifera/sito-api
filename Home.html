@@ -40,13 +40,12 @@
     .header-section {
                      background-color: #000;
                      padding: 0px 0px; /* Spaziatura sopra e sotto */
+                     align-items: center;
                      text-align: center;
                     }
 
     .img-header {
                  width: 500px;
-                 margin: 0px auto;
-                 display: block;
                  height: 300px;
                 }
 
@@ -73,6 +72,7 @@
 
     .img-logo {
                border-radius: 50%;
+               margin: 0 auto; <!-- per centrare orizzzontalmente il logo -->
               }
 
     .nettare {
@@ -84,7 +84,7 @@
 
   <body class="u-body u-xl-mode" data-lang="it">
     <!-- ATTENZIONE -->
-    <div class="header-section" style="margin-top: -20px; margin-bottom: -18px">
+    <div class="header-section" style="margin-top: -20px; margin-bottom: -18px; justify-content: center; align-items: center;">
       <p>
           <img src="Logo API.jpg" alt="logo" height="300px" width="300px" class="img-logo">
       </p>
@@ -96,9 +96,9 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-group-1">
           <div class="u-container-layout u-valign-middle u-container-layout-1">
-            <h3 class="u-align-center u-text u-text-1 d-flex justify-center align-center">
+            <h4 class="u-align-center u-text u-text-1 essec">
                 Un dolce paradiso dove le api possono produrre tranquillamente il "nettare degli dei"
-            </h3>
+            </h4>
             <div class="u-border-10 u-border-palette-3-dark-1 u-line u-line-horizontal u-line-1">
             </div>
           </div>
@@ -110,7 +110,7 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-align-center u-container-style u-expanded-width-sm u-expanded-width-xs u-group u-group-1">
           <div class="u-container-layout u-valign-middle u-container-layout-1">
-            <cite class="u-text u-text-1 " style="font-size: 1.3rem">
+            <cite class="u-text u-text-1 " >
               "Le api sono i custodi silenziosi della natura, tessendo il filo d'oro della vita attraverso i fiori. Nella nostra famiglia, custodiamo con amore il loro lavoro. "
             </cite>
           </div>
@@ -161,9 +161,9 @@
             </h2><!--/product_title--><!--product_price-->
             <div class="u-product-control u-product-price u-product-price-1">
               <div class="u-price-wrapper u-spacing-10"><!--product_old_price-->
-                <div class="u-hide-price u-old-price" style="text-decoration: line-through !important;"><!--product_old_price_content-->$20<!--/product_old_price_content--></div><!--/product_old_price--><!--product_regular_price-->
+                <div class="u-hide-price u-old-price" style="text-decoration: line-through !important;"><!--product_old_price_content-->€20<!--/product_old_price_content--></div><!--/product_old_price--><!--product_regular_price-->
                 <div class="u-price u-text-palette-2-base" style="font-size: 1.5rem; font-weight: 700;">
-                  $8.00
+                  €8.00
                 </div><!--/product_regular_price-->
               </div>
             </div>
@@ -182,9 +182,9 @@
             </h2><!--/product_title--><!--product_price-->
             <div class="u-product-control u-product-price u-product-price-1">
               <div class="u-price-wrapper u-spacing-10"><!--product_old_price-->
-                <div class="u-hide-price u-old-price" style="text-decoration: line-through !important;"><!--product_old_price_content-->$20<!--/product_old_price_content--></div><!--/product_old_price--><!--product_regular_price-->
+                <div class="u-hide-price u-old-price" style="text-decoration: line-through !important;"><!--product_old_price_content-->€20<!--/product_old_price_content--></div><!--/product_old_price--><!--product_regular_price-->
                 <div class="u-price u-text-palette-2-base" style="font-size: 1.5rem; font-weight: 700;">
-                  $15.00
+                  €15.00
                 </div><!--/product_regular_price-->
               </div>
             </div>
@@ -214,13 +214,13 @@
                 <label for="phone-1786" class="u-label">
                   Telefono
                 </label>
-                <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Enter your phone (e.g. +14155552675)" id="phone-1786" name="phone" class="u-border-none u-input u-input-rectangle u-radius-30" required="">
+                <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Inserisci il tuo numero (es. +393661701471)" id="phone-1786" name="phone" class="u-border-none u-input u-input-rectangle u-radius-30" required="">
               </div>
               <div class="u-form-group u-form-name u-form-partition-factor-2">
                 <label for="name-5db7" class="u-label">
                   Nome Cognome
                 </label>
-                <input type="text" placeholder="Enter your Name" id="name-5db7" name="name" class="u-border-none u-input u-input-rectangle u-radius-30" required="">
+                <input type="text" placeholder="Inserisci il tuo nome" id="name-5db7" name="name" class="u-border-none u-input u-input-rectangle u-radius-30" required="">
               </div>
               <div class="u-form-date u-form-group u-form-group-3">
                 <label for="email-ad35" class="u-label">
@@ -378,10 +378,10 @@
                   <div class="u-align-left u-product-control u-product-price u-product-price-1">
                     <div class="u-price-wrapper u-spacing-10">
                       <div class="u-hide-price u-old-price" style="text-decoration: line-through !important;">
-                        $8.00
+                        €8.00
                       </div>
                       <div class="u-price" style="font-size: 1.25rem; font-weight: 700;">
-                        $15.00
+                        €15.00
                       </div>
                     </div>
                   </div>
@@ -449,7 +449,7 @@
 }
 
 .u-dialog-section-10 .u-products-1 {
-  margin-top: 30px;
+  margin-top: 0px;
   margin-bottom: 0;
 }
 
